@@ -1,4 +1,4 @@
 package sample
 
-class Rational {
-}
+// プライマリコンストラクタ
+class Rational(val numerator: Int, val denominator: Int)
