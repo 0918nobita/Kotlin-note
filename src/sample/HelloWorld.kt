@@ -1,10 +1,10 @@
 package sample
 
 fun main(args: Array<String>) {
-  println("Hello, world!")
   val half = Rational(1, 2)
-  val rat = Rational(1, 3)
-  println(half + rat)
-  println(half + 2)
-  println(2 + half)
+  val oneThird = Rational(1, 3)
+
+  println(half + oneThird)  // => "5/6"
+  println(half + 2)         // => "5/2"
+  println(2 + half)         // => "5/2"
 }
