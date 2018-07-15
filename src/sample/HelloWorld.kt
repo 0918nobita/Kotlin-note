@@ -6,4 +6,5 @@ fun main(args: Array<String>) {
   val rat = Rational(1, 3)
   println(half + rat)
   println(half + 2)
+  println(2 + half)
 }

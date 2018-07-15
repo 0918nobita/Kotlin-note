@@ -28,3 +28,5 @@ class Rational(n: Int, d: Int) {
     if (b == 0) a
     else gcd(b, a % b)
 }
+
+operator fun Int.plus(r: Rational) = r + this
