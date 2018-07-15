@@ -18,6 +18,9 @@ class Rational(n: Int, d: Int) {
       denominator * that.denominator
     )
 
+  operator fun plus(n: Int): Rational =
+    Rational(numerator + n * denominator, denominator)
+
   override fun toString(): String = "$numerator/$denominator"
 
   // tailrec: 末尾再帰
