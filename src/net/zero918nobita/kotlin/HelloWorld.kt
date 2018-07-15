@@ -1,4 +1,4 @@
-package sample
+package net.zero918nobita.kotlin
 
 fun main(args: Array<String>) {
   val half = Rational(1, 2)

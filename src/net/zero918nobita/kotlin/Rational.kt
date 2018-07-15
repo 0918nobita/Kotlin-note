@@ -1,4 +1,4 @@
-package sample
+package net.zero918nobita.kotlin
 
 class Rational(n: Int, d: Int) {
   init {
