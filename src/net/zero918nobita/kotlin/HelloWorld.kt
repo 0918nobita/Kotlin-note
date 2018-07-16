@@ -72,4 +72,9 @@ fun main(args: Array<String>) {
     9 -> "nine"
     else -> "unknown"
   })
+
+  run {
+    var count = 3
+    while (count-- > 0) println("Hello")
+  }
 }
