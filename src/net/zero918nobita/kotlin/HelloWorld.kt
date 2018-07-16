@@ -29,4 +29,14 @@ fun main(args: Array<String>) {
     println("ints.size: ${ints.size}")  // => "ints.size: 3"
     println("ints[2]: ${ints[2]}")      // => "ints[2]: 3"
   }
+
+  run {
+    val chars = mutableListOf('a', 'b')
+    chars[0] = 'c'
+    println("chars: $chars")  // => "chars: [c, b]"
+    chars += 'a'
+    println("chars: $chars")  // => "chars: [c, b, a]"
+    chars -= 'b'
+    println("chars: $chars")  // => "chars: [c, a]"
+  }
 }
