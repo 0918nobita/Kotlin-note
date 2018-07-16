@@ -16,4 +16,10 @@ fun main(args: Array<String>) {
     ints[0] = 123
     println("ints[0]: ${ints[0]}")  // => "ints[0]: 123"
   }
+
+  println(arrayOf("ab", "cd", "ef")[1])  // => cd
+
+  println(intArrayOf(1, 2, 3)[2])           // => 3
+  println(doubleArrayOf(1.0, 2.0, 3.0)[0])  // => 1.0
+  println(charArrayOf('a', 'b', 'c')[1])    // => b
 }
