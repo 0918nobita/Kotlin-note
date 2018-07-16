@@ -84,4 +84,15 @@ fun main(args: Array<String>) {
 
   for (item in MyIterable()) print(item)
   println()
+
+  run {
+    val names = listOf("foo", "bar", "baz")
+    var barIndex = -1
+    for (index in names.indices)
+      if (names[index] == "bar") {
+        barIndex = index
+        break
+      }
+    println(barIndex)
+  }
 }
