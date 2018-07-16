@@ -47,4 +47,13 @@ fun main(args: Array<String>) {
     strs -= "abc"
     println("strs: $strs")  // => "strs: [def]"
   }
+
+  run {
+    val range = 10..15
+    println("5 in range: ${5 in range}")    // => false
+    println("5 !in range: ${5 !in range}")  // => true
+    println("range.reversed.toList(): ${range.reversed().toList()}")  // => [15, 14, 13, 12, 11, 10]
+
+    println("(10 downTo 1 step 2).toList(): ${(10 downTo 1 step 2).toList()}")  // => [10, 8, 6, 4, 2]
+  }
 }
