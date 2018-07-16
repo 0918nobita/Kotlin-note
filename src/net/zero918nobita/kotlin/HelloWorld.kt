@@ -63,7 +63,7 @@ fun main(args: Array<String>) {
     0 -> "zero"
     1 -> "one"
     2 -> "two"
-    3 -> "three"
+    (1 + 2) -> "three"
     4 -> "four"
     5 -> "five"
     6 -> "six"
