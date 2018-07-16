@@ -75,6 +75,10 @@ fun main(args: Array<String>) {
 
   run {
     var count = 3
-    while (count-- > 0) println("Hello")
+    while (count-- > 0) print(2)
   }
+
+  println()
+  for (i in 1..5) print(i)
+  println()
 }
