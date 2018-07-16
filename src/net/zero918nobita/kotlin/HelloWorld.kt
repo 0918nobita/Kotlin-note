@@ -10,9 +10,10 @@ fun main(args: Array<String>) {
 
   run {
     val ints = arrayOfNulls<Int>(5)
-    println("ints[0]: ${ints[0]}, ints.size: ${ints.size}")
+    println("ints[0]: ${ints[0]}")      // => "ints[0]: null"
+    println("ints.size: ${ints.size}")  // => "ints.size: 5"
 
     ints[0] = 123
-    println("ints[0]: ${ints[0]}")
+    println("ints[0]: ${ints[0]}")  // => "ints[0]: 123"
   }
 }
