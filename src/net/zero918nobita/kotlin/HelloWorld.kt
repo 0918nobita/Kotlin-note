@@ -22,4 +22,11 @@ fun main(args: Array<String>) {
   println(intArrayOf(1, 2, 3)[2])           // => 3
   println(doubleArrayOf(1.0, 2.0, 3.0)[0])  // => 1.0
   println(charArrayOf('a', 'b', 'c')[1])    // => b
+
+  run {
+    val ints = listOf(1, 2, 3)
+    println("ints: $ints")  // => "ints: [1, 2, 3]"
+    println("ints.size: ${ints.size}")  // => "ints.size: 3"
+    println("ints[2]: ${ints[2]}")      // => "ints[2]: 3"
+  }
 }
