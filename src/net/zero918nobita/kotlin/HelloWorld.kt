@@ -39,4 +39,12 @@ fun main(args: Array<String>) {
     chars -= 'b'
     println("chars: $chars")  // => "chars: [c, a]"
   }
+
+  println(setOf("abc", "def"))  // => [abc, def]
+
+  run {
+    val strs = mutableSetOf("abc", "def")
+    strs -= "abc"
+    println("strs: $strs")  // => "strs: [def]"
+  }
 }
