@@ -81,4 +81,7 @@ fun main(args: Array<String>) {
   println()
   for (i in 1..5) print(i)
   println()
+
+  for (item in MyIterable()) print(item)
+  println()
 }
