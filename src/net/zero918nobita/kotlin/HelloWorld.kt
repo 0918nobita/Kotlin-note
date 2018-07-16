@@ -1,5 +1,7 @@
 package net.zero918nobita.kotlin
 
+import java.util.Random
+
 fun main(args: Array<String>) {
   val half = Rational(1, 2)
   val oneThird = Rational(1, 3)
@@ -56,4 +58,18 @@ fun main(args: Array<String>) {
 
     println("(10 downTo 1 step 2).toList(): ${(10 downTo 1 step 2).toList()}")  // => [10, 8, 6, 4, 2]
   }
+
+  println(when (Random().nextInt(10)) {
+    0 -> "zero"
+    1 -> "one"
+    2 -> "two"
+    3 -> "three"
+    4 -> "four"
+    5 -> "five"
+    6 -> "six"
+    7 -> "seven"
+    8 -> "eight"
+    9 -> "nine"
+    else -> "unknown"
+  })
 }
