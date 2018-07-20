@@ -95,4 +95,11 @@ fun main(args: Array<String>) {
       }
     println(barIndex)
   }
+
+  loop@ for (x in 1..10) {
+    for (y in 1..10) {
+      println("$x : $y")
+      if (y == 5) break@loop
+    }
+  }
 }
