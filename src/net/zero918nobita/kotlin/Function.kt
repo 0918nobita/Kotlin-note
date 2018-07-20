@@ -11,10 +11,15 @@ fun sum(ints: Array<Int>): Int {
   return sum
 }
 
+fun sub(minuend: Int, subtrahend: Int) = minuend - subtrahend
+
 fun main(args: Array<String>) {
   println(succ(30))  // => 31
   println(square(5))  // => 25
   println(hello("Kotlin"))  // => "Hello, Kotlin"
   println(max(1, 2))  // => 1
   println(sum(arrayOf(1, 2, 3)))  // => 6
+
+  println(sub(minuend = 10, subtrahend = 7))  // => 3
+  println(sub(subtrahend = 7, minuend = 10))  // => 3
 }
