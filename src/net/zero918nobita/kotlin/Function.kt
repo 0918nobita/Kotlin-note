@@ -26,4 +26,7 @@ fun main(args: Array<String>) {
 
   println(hello("Kotlin"))  // => "Hello, Kotlin"
   println(hello())  // => "Hello, Kotlin"
+
+  val myFunction = ::succ
+  println(myFunction(2))  // => 3
 }
