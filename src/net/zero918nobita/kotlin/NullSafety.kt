@@ -13,4 +13,9 @@ fun main(args: Array<String>) {
     ints.add(4)
   }
   println(ints)  // => [1, 2, 3, 4]
+
+  val bar: String? = "Hello"
+  println(bar?.toUpperCase())  // => Hello
+  val baz: String? = null
+  println(baz?.toUpperCase())  // => null
 }
