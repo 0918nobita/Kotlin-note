@@ -1,9 +1,11 @@
 package net.zero918nobita.kotlin
 
-class Person(val name: String)
+class Person(private val name: String) {
+  fun show() = println(name)
+}
 
 fun main(args: Array<String>) {
   val constructor = ::Person
   val taro = constructor("Taro")
-  println(taro.name)  // => Taro
+  taro.show()  // => Taro
 }
