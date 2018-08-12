@@ -17,6 +17,16 @@ fun sub(minuend: Int, subtrahend: Int) = minuend - subtrahend
 
 fun twice(n: Int, f: (Int) -> Int): Int = f(f(n))
 
+fun max(n: Int, vararg ints: Int): Int {
+  var max = n
+  for (i in ints) {
+    if (max < i) {
+      max = i
+    }
+  }
+  return max
+}
+
 fun main(args: Array<String>) {
   println(succ(30))  // => 31
   println(square(5))  // => 25
@@ -33,4 +43,6 @@ fun main(args: Array<String>) {
   println(myFunction(2))  // => 3
 
   println(twice(5, ::succ)) // => 7
+
+  println(max(3, 4, 8, 0))  // => 8
 }
