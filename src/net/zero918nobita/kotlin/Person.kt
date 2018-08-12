@@ -1,8 +1,6 @@
 package net.zero918nobita.kotlin
 
-class Person(n: String) {
-  var name: String = n
-}
+class Person(val name: String)
 
 fun main(args: Array<String>) {
   val constructor = ::Person
