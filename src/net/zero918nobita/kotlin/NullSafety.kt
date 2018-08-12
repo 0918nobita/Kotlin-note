@@ -16,6 +16,7 @@ fun main(args: Array<String>) {
 
   val bar: String? = "Hello"
   println(bar?.toUpperCase())  // => Hello
+
   val baz: String? = null
-  println(baz?.toUpperCase())  // => null
+  println(baz?.toUpperCase() ?: "default")  // => default
 }
