@@ -7,6 +7,9 @@ open class Person(private val name: String) {
 class Student(private val id: Long,
               private val name: String): Person(name) {
   override fun show() = println("Student(id=$id, name=$name)")
+
+  val initial: Char
+    get() = name[0]
 }
 
 fun main(args: Array<String>) {
@@ -15,5 +18,6 @@ fun main(args: Array<String>) {
   taro.show()  // => Taro
 
   val student = Student(123, "Tom")
-  student.show()
+  student.show()  // => "Student(id=123, name=Tom)"
+  println(student.initial)  // => T
 }
