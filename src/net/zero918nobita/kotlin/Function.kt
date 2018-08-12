@@ -15,6 +15,8 @@ fun sum(ints: Array<Int>): Int {
 
 fun sub(minuend: Int, subtrahend: Int) = minuend - subtrahend
 
+fun twice(n: Int, f: (Int) -> Int): Int = f(f(n))
+
 fun main(args: Array<String>) {
   println(succ(30))  // => 31
   println(square(5))  // => 25
@@ -29,4 +31,6 @@ fun main(args: Array<String>) {
 
   val myFunction = ::succ
   println(myFunction(2))  // => 3
+
+  println(twice(5, ::succ)) // => 7
 }
