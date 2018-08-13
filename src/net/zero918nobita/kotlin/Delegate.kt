@@ -12,7 +12,7 @@ class EnglishGreeter2(override val name: String): Greeter2 {
   override fun sayHello() = println("Hello!")
 }
 
-class CountingGreeter(private val greeter: Greeter2): Greeter2 {
+/*class CountingGreeter(private val greeter: Greeter2): Greeter2 {
   var helloCount: Int = 0
     private set
 
@@ -25,6 +25,16 @@ class CountingGreeter(private val greeter: Greeter2): Greeter2 {
     helloCount++
     greeter.sayHello()
   }
+}*/
+
+class CountingGreeter(private val greeter: Greeter2): Greeter2 by greeter {
+  var helloCount = 0
+    private set
+
+  override fun sayHello() {
+    helloCount++
+    greeter.sayHello()
+  }
 }
 
 fun main(args: Array<String>) {
@@ -32,5 +42,6 @@ fun main(args: Array<String>) {
   countingGreeter.sayHello()
   countingGreeter.sayHello()
   countingGreeter.sayHello()
+  countingGreeter.introduceMyself()
   println(countingGreeter.helloCount)
 }
