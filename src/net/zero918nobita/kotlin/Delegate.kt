@@ -7,10 +7,7 @@ interface Greeter2 {
 }
 
 class EnglishGreeter2(override val name: String): Greeter2 {
-  override fun introduceMyself() {
-    sayHello()
-    println("My name is $name.")
-  }
+  override fun introduceMyself() = println("My name is $name.")
 
   override fun sayHello() = println("Hello!")
 }
